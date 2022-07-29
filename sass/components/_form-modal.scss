@@ -80,7 +80,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  fill: var(--color-icon-modal);
+  fill: var(--title-text-color);
 
   transition: fill var(--duration-primary) var(--timing-primary);
 }

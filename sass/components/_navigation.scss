@@ -20,7 +20,7 @@
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-menu-header);
+  color: var(--title-text-color);
   transition: color var(--duration-primary) var(--timing-primary);
 
   &--current {

@@ -4,12 +4,6 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --title-text-color: #212121;
-  --color-icon-modal: #212121;
-  --color-menu-header: #212121;
-  --color-h-second: #212121;
-  --color-h-third: #212121;
-  --color-icon-menu-mobile: #212121;
-  --color-btn-secondary: #212121;
   --color-board-btn-close: rgba(0, 0, 0, 0.1);
   --color-board-card: #eeeeee;
   --color-board-client: #afb1b8;
@@ -33,17 +27,12 @@
   --bg-backdrop: rgba(0, 0, 0, 0.2);
   --bg-btn-hover: #188ce8;
   --bg-btn-secondary: #f5f4fa;
-  --bg-card-team: #ffffff;
   --bg-client: transparent;
   --bg-work: rgba(47, 48, 58, 0.8);
   --bg-footer: #2f303a;
-  --bg-header: #ffffff;
   --bg-hero: #c4c4c4;
   --bg-link-social-team: transparent;
-  --bg-menu-mobile: #ffffff;
-  --bg-modal: #ffffff;
   --bg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
-  --bg-page: #ffffff;
   --bg-section-team: #f5f4fa;
   --bg-social-icon-footer: rgba(255, 255, 255, 0.1);
   --duration-primary: 250ms;
@@ -119,7 +108,7 @@
 }
 body {
   font-family: var(--font-family-primary);
-  background-color: var(--bg-page);
+  background-color: var(--primary-white-color);
   color: var(--color-p);
   font-size: var(--font-size-primary);
   letter-spacing: var(--letter-spacing-primary);
@@ -204,7 +193,7 @@ button {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
-  color: var(--color-h-second);
+  color: var(--title-text-color);
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -333,7 +322,7 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--bg-header);
+  background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--color-board-header);
 }
 @media screen and (max-width: 767px) {
@@ -350,7 +339,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--bg-menu-mobile);
+    background-color: var(--primary-white-color);
     z-index: 1;
   }
 }
@@ -400,7 +389,7 @@ button {
     height: 40px;
     background-color: transparent;
     border: none;
-    color: var(--color-icon-menu-mobile);
+    color: var(--title-text-color);
     cursor: pointer;
   }
 }
@@ -509,7 +498,7 @@ button {
     height: 40px;
     background-color: transparent;
     border: none;
-    color: var(--color-icon-menu-mobile);
+    color: var(--title-text-color);
     cursor: pointer;
     z-index: 3;
   }
@@ -611,7 +600,7 @@ button {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-menu-header);
+  color: var(--title-text-color);
   -webkit-transition: color var(--duration-primary) var(--timing-primary);
   transition: color var(--duration-primary) var(--timing-primary);
 }
@@ -967,7 +956,7 @@ button {
 .modal {
   position: relative;
   padding: var(--padding-modal);
-  background-color: var(--bg-modal);
+  background-color: var(--primary-white-color);
   border-radius: var(--radius-board-primary);
   -webkit-box-shadow: var(--shadow-modal);
           box-shadow: var(--shadow-modal);
@@ -1118,7 +1107,7 @@ button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  fill: var(--color-icon-modal);
+  fill: var(--title-text-color);
   -webkit-transition: fill var(--duration-primary) var(--timing-primary);
   transition: fill var(--duration-primary) var(--timing-primary);
 }
@@ -1294,7 +1283,7 @@ button {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--color-h-second);
+  color: var(--title-text-color);
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -1432,7 +1421,7 @@ button {
 }
 
 .team__description {
-  background-color: var(--bg-card-team);
+  background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 24px;
 }
@@ -1446,7 +1435,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--color-h-third);
+  color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
@@ -1454,7 +1443,7 @@ button {
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-p);
-  background-color: var(--bg-card-team);
+  background-color: var(--primary-white-color);
   margin-bottom: 16px;
 }
 
@@ -1566,7 +1555,7 @@ button {
 
 .portfolio__button {
   background-color: var(--bg-btn-secondary);
-  color: var(--color-btn-secondary);
+  color: var(--title-text-color);
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -1711,7 +1700,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-h-second);
+  color: var(--title-text-color);
   margin-bottom: 4px;
 }
 

@@ -57,7 +57,7 @@
 }
 
 .team__description {
-  background-color: var(--bg-card-team);
+  background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 24px;
 
@@ -70,7 +70,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--color-h-third);
+  color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
@@ -78,6 +78,6 @@
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-p);
-  background-color: var(--bg-card-team);
+  background-color: var(--primary-white-color);
   margin-bottom: 16px;
 }
