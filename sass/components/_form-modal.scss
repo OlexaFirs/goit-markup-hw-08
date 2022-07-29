@@ -1,7 +1,7 @@
 .form {
   @include positioning-flex($jc: start);
   flex-direction: column;
-  width: var(--width-form-modal-under-1200);
+  width: var(--width-form-modal-under);
   text-align: left;
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: var(--width-form-modal-1200);
+    width: var(--width-form-modal);
   }
 }
 
@@ -66,7 +66,7 @@
   padding-left: 42px;
   color: var(--primary-text-color);
 
-  transition: border var(--duration-primary) var(--timing-primary);
+  transition: border var(--primary-duration) var(--timing-primary);
 
   &:focus-within {
     border: 1px solid var(--accent-color);
@@ -82,7 +82,7 @@
 
   fill: var(--title-text-color);
 
-  transition: fill var(--duration-primary) var(--timing-primary);
+  transition: fill var(--primary-duration) var(--timing-primary);
 }
 
 .form__textarea {
@@ -98,7 +98,7 @@
   margin: 0;
   resize: none;
 
-  transition: border var(--duration-primary) var(--timing-primary);
+  transition: border var(--primary-duration) var(--timing-primary);
 
   &:focus-within {
     border: 1px solid var(--accent-color);
@@ -158,7 +158,7 @@
 .form__icon-unchecked {
   opacity: 1;
 
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 
   .checkbox:checked + .form__custom-checkbox & {
     opacity: 0;
@@ -170,7 +170,7 @@
 
   fill: var(--accent-color);
 
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 
   .checkbox:checked + .form__custom-checkbox & {
     opacity: 1;

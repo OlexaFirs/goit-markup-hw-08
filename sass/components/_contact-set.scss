@@ -22,7 +22,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-left: var(--margin-contact-item);
+      margin-left: var(--gap);
       height: 100%;
     }
   }
@@ -33,7 +33,7 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
-  transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {

@@ -6,15 +6,15 @@
   min-height: 100%;
   z-index: 10;
 
-  background-color: var(--bg-backdrop);
+  background-color: var(--bcg-backdrop);
 
   visibility: visible;
 
-  transition: visibility var(--duration-primary) var(--timing-primary);
+  transition: visibility var(--primary-duration) var(--timing-primary);
 }
 
 .backdrop--is-hidden {
   visibility: hidden;
   pointer-events: none;
-  transition: visibility var(--duration-primary) var(--timing-primary);
+  transition: visibility var(--primary-duration) var(--timing-primary);
 }

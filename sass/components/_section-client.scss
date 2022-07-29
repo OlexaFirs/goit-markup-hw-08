@@ -42,8 +42,8 @@
   border: 1px solid var(--client-color);
   border-radius: var(--radius-board-primary);
 
-  transition: color var(--duration-primary) var(--timing-primary),
-    border var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary),
+    border var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {

@@ -17,10 +17,10 @@
   border-radius: var(--radius-board-primary);
   cursor: pointer;
 
-  transition: background-color var(--duration-primary) var(--timing-primary);
+  transition: background-color var(--primary-duration) var(--timing-primary);
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--bg-btn-hover);
+  background-color: var(--accent-hover);
 }

@@ -39,7 +39,7 @@
   height: 16px;
   opacity: 1;
   fill: currentColor;
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 }
 
 .menu__container {
@@ -109,7 +109,7 @@
   height: 19px;
   opacity: 0;
   fill: currentColor;
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 
   .menu__button-close.is-open & {
     opacity: 1;

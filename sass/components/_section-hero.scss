@@ -3,12 +3,12 @@
   height: 400px;
   background-position: center;
   background-size: cover;
-  background-color: var(--bg-hero);
+  background-color: var(--bcg-hero);
   color: var(--primary-white-color);
   text-align: center;
 
-  padding-top: var(--padding-hero-under-1200);
-  padding-bottom: var(--padding-hero-under-1200);
+  padding-top: var(--padding-hero-under);
+  padding-bottom: var(--padding-hero-under);
 
   @media screen and (max-width: 479px) {
     max-width: 480px;
@@ -54,8 +54,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: var(--padding-hero-1200);
-    padding-bottom: var(--padding-hero-1200);
+    padding-top: var(--padding-hero);
+    padding-bottom: var(--padding-hero);
     height: 600px;
   }
 }

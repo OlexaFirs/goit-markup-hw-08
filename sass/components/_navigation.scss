@@ -21,7 +21,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 
   &--current {
     color: var(--accent-color);

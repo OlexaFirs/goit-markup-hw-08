@@ -9,7 +9,7 @@
   color: var(--primary-white-color);
   margin-bottom: 9px;
 
-  transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {
@@ -20,11 +20,11 @@
 .address__email {
   display: block;
   text-decoration: none;
-  color: var(--color-contact-footer);
+  color: var(--color-footer);
   line-height: 1.71;
   margin-bottom: 9px;
 
-  transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {
@@ -34,10 +34,10 @@
 
 .address__tel {
   text-decoration: none;
-  color: var(--color-contact-footer);
+  color: var(--color-footer);
   line-height: 1.71;
 
-  transition: color var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {

@@ -2,30 +2,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap");
 :root {
   --accent-color: #2196f3;
+  --accent-hover: #188ce8;
   --primary-white-color: #ffffff;
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --client-color: #afb1b8;
   --secondary-black-color: #000000;
   --bcg-color: #f5f4fa;
-  --color-board-btn-close: rgba(0, 0, 0, 0.1);
+  --bcg-footer: #2f303a;
+  --bcg-hero: #c4c4c4;
+  --bcg-backdrop: rgba(0, 0, 0, 0.2);
+  --bcg-work: rgba(47, 48, 58, 0.8);
+  --bcg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
+  --bcg-social-icon-footer: rgba(255, 255, 255, 0.1);
   --color-board-card: #eeeeee;
   --color-board-header: #ececec;
+  --color-footer: rgba(255, 255, 255, 0.6);
+  --color-board-btn-close: rgba(0, 0, 0, 0.1);
   --color-board-input-footer: rgba(255, 255, 255, 0.3);
   --color-board-input-modal: rgba(33, 33, 33, 0.2);
-  --color-contact-footer: rgba(255, 255, 255, 0.6);
-  --color-input-footer: rgba(255, 255, 255, 0.6);
   --color-placeholder-modal: rgba(117, 117, 117, 0.5);
-  --bg-backdrop: rgba(0, 0, 0, 0.2);
-  --bg-btn-hover: #188ce8;
-  --bg-work: rgba(47, 48, 58, 0.8);
-  --bg-footer: #2f303a;
-  --bg-hero: #c4c4c4;
-  --bg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
-  --bg-social-icon-footer: rgba(255, 255, 255, 0.1);
-  --bg-link-social-team: transparent;
-  --bg-client: transparent;
-  --duration-primary: 250ms;
+  --shadow-card-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadow-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-menu-mobile: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  --primary-duration: 250ms;
+  --timing-primary: cubic-bezier(0.4, 0, 0.2, 1);
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
   --font-size-primary: 14px;
@@ -33,32 +40,21 @@
   --line-height-primary: 1.14;
   --gap: 30px;
   --margin-menu-item: 50px;
-  --margin-contact-item: 30px;
   --padding-container: 15px;
-  --padding-hero-under-1200: 118px;
-  --padding-hero-1200: 200px;
+  --padding-hero-under: 118px;
+  --padding-hero: 200px;
   --padding-menu-mobile: 48px 40px;
   --padding-modal: 40px;
-  --padding-section-under-1200: 60px;
-  --padding-section-1200: 94px;
+  --padding-section-under: 60px;
+  --padding-section: 94px;
   --radius-board-primary: 4px;
-  --shadow-card-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --shadow-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  --shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-menu-mobile: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
-  --timing-primary: cubic-bezier(0.4, 0, 0.2, 1);
   --width-card-768: 354px;
   --width-container-480: 480px;
   --width-container-768: 768px;
   --width-container-1200: 1200px;
   --width-page: 1600px;
-  --width-form-modal-under-1200: 370px;
-  --width-form-modal-1200: 448px;
+  --width-form-modal-under: 370px;
+  --width-form-modal: 448px;
 }
 
 @font-face {
@@ -217,25 +213,25 @@ button {
   border: none;
   border-radius: var(--radius-board-primary);
   cursor: pointer;
-  -webkit-transition: background-color var(--duration-primary) var(--timing-primary);
-  transition: background-color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: background-color var(--primary-duration) var(--timing-primary);
+  transition: background-color var(--primary-duration) var(--timing-primary);
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--bg-btn-hover);
+  background-color: var(--accent-hover);
 }
 
 .section {
   margin: 0 auto;
   text-align: center;
-  padding-top: var(--padding-section-under-1200);
-  padding-bottom: var(--padding-section-under-1200);
+  padding-top: var(--padding-section-under);
+  padding-bottom: var(--padding-section-under);
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: var(--padding-section-1200);
-    padding-bottom: var(--padding-section-1200);
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
   }
 }
 
@@ -289,18 +285,18 @@ button {
   color: inherit;
   border: none;
   border-radius: 50%;
-  background-color: var(--bg-social-icon-footer);
+  background-color: var(--bcg-social-icon-footer);
   padding: 12px;
-  -webkit-transition: background-color var(--duration-primary) var(--timing-primary);
-  transition: background-color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: background-color var(--primary-duration) var(--timing-primary);
+  transition: background-color var(--primary-duration) var(--timing-primary);
 }
 .social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
 }
 .social__link--refill {
   color: var(--client-color);
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .social__link--refill:hover, .social__link--refill:focus {
   color: var(--primary-white-color);
@@ -393,8 +389,8 @@ button {
   height: 16px;
   opacity: 1;
   fill: currentColor;
-  -webkit-transition: opacity var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  -webkit-transition: opacity var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -503,8 +499,8 @@ button {
   height: 19px;
   opacity: 0;
   fill: currentColor;
-  -webkit-transition: opacity var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  -webkit-transition: opacity var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 }
 .menu__button-close.is-open .menu__icon-close {
   opacity: 1;
@@ -591,8 +587,8 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .navigation__link--current {
   color: var(--accent-color);
@@ -690,7 +686,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .contact__item + .contact__item {
-    margin-left: var(--margin-contact-item);
+    margin-left: var(--gap);
     height: 100%;
   }
 }
@@ -700,8 +696,8 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
@@ -839,11 +835,11 @@ button {
   height: 400px;
   background-position: center;
   background-size: cover;
-  background-color: var(--bg-hero);
+  background-color: var(--bcg-hero);
   color: var(--primary-white-color);
   text-align: center;
-  padding-top: var(--padding-hero-under-1200);
-  padding-bottom: var(--padding-hero-under-1200);
+  padding-top: var(--padding-hero-under);
+  padding-bottom: var(--padding-hero-under);
 }
 @media screen and (max-width: 479px) {
   .hero__section {
@@ -886,8 +882,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
-    padding-top: var(--padding-hero-1200);
-    padding-bottom: var(--padding-hero-1200);
+    padding-top: var(--padding-hero);
+    padding-bottom: var(--padding-hero);
     height: 600px;
   }
 }
@@ -930,17 +926,17 @@ button {
   width: 100%;
   min-height: 100%;
   z-index: 10;
-  background-color: var(--bg-backdrop);
+  background-color: var(--bcg-backdrop);
   visibility: visible;
-  -webkit-transition: visibility var(--duration-primary) var(--timing-primary);
-  transition: visibility var(--duration-primary) var(--timing-primary);
+  -webkit-transition: visibility var(--primary-duration) var(--timing-primary);
+  transition: visibility var(--primary-duration) var(--timing-primary);
 }
 
 .backdrop--is-hidden {
   visibility: hidden;
   pointer-events: none;
-  -webkit-transition: visibility var(--duration-primary) var(--timing-primary);
-  transition: visibility var(--duration-primary) var(--timing-primary);
+  -webkit-transition: visibility var(--primary-duration) var(--timing-primary);
+  transition: visibility var(--primary-duration) var(--timing-primary);
 }
 
 .modal {
@@ -976,8 +972,8 @@ button {
   cursor: pointer;
   background-color: transparent;
   z-index: 20;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .modal__close-btn:hover, .modal__close-btn:focus {
   color: var(--accent-color);
@@ -1000,10 +996,10 @@ button {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  -webkit-transition: opacity var(--duration-primary) var(--timing-primary), -webkit-transform var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary), -webkit-transform var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary), transform var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary), transform var(--duration-primary) var(--timing-primary), -webkit-transform var(--duration-primary) var(--timing-primary);
+  -webkit-transition: opacity var(--primary-duration) var(--timing-primary), -webkit-transform var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary), -webkit-transform var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary), transform var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary), transform var(--primary-duration) var(--timing-primary), -webkit-transform var(--primary-duration) var(--timing-primary);
 }
 
 .form {
@@ -1020,7 +1016,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: var(--width-form-modal-under-1200);
+  width: var(--width-form-modal-under);
   text-align: left;
   padding: 0;
   margin: 0;
@@ -1032,7 +1028,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .form {
-    width: var(--width-form-modal-1200);
+    width: var(--width-form-modal);
   }
 }
 
@@ -1083,8 +1079,8 @@ button {
   border-radius: var(--radius-board-primary);
   padding-left: 42px;
   color: var(--primary-text-color);
-  -webkit-transition: border var(--duration-primary) var(--timing-primary);
-  transition: border var(--duration-primary) var(--timing-primary);
+  -webkit-transition: border var(--primary-duration) var(--timing-primary);
+  transition: border var(--primary-duration) var(--timing-primary);
 }
 .form__input:focus-within {
   border: 1px solid var(--accent-color);
@@ -1098,8 +1094,8 @@ button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: var(--title-text-color);
-  -webkit-transition: fill var(--duration-primary) var(--timing-primary);
-  transition: fill var(--duration-primary) var(--timing-primary);
+  -webkit-transition: fill var(--primary-duration) var(--timing-primary);
+  transition: fill var(--primary-duration) var(--timing-primary);
 }
 
 .form__textarea {
@@ -1112,8 +1108,8 @@ button {
   padding: 12px 16px;
   margin: 0;
   resize: none;
-  -webkit-transition: border var(--duration-primary) var(--timing-primary);
-  transition: border var(--duration-primary) var(--timing-primary);
+  -webkit-transition: border var(--primary-duration) var(--timing-primary);
+  transition: border var(--primary-duration) var(--timing-primary);
 }
 .form__textarea:focus-within {
   border: 1px solid var(--accent-color);
@@ -1185,8 +1181,8 @@ button {
 
 .form__icon-unchecked {
   opacity: 1;
-  -webkit-transition: opacity var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  -webkit-transition: opacity var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 }
 .checkbox:checked + .form__custom-checkbox .form__icon-unchecked {
   opacity: 0;
@@ -1195,8 +1191,8 @@ button {
 .form__icon-checked {
   opacity: 0;
   fill: var(--accent-color);
-  -webkit-transition: opacity var(--duration-primary) var(--timing-primary);
-  transition: opacity var(--duration-primary) var(--timing-primary);
+  -webkit-transition: opacity var(--primary-duration) var(--timing-primary);
+  transition: opacity var(--primary-duration) var(--timing-primary);
 }
 .checkbox:checked + .form__custom-checkbox .form__icon-checked {
   opacity: 1;
@@ -1328,7 +1324,7 @@ button {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  background-color: var(--bg-work);
+  background-color: var(--bcg-work);
 }
 
 .team {
@@ -1494,8 +1490,8 @@ button {
   background-color: var(--bg-client);
   border: 1px solid var(--client-color);
   border-radius: var(--radius-board-primary);
-  -webkit-transition: color var(--duration-primary) var(--timing-primary), border var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary), border var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary), border var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary), border var(--primary-duration) var(--timing-primary);
 }
 .client__link:hover, .client__link:focus {
   color: var(--accent-color);
@@ -1557,10 +1553,10 @@ button {
   padding: 6px 22px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary), background-color var(--duration-primary) var(--timing-primary), -webkit-box-shadow var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary), background-color var(--duration-primary) var(--timing-primary), -webkit-box-shadow var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary), background-color var(--duration-primary) var(--timing-primary), box-shadow var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary), background-color var(--duration-primary) var(--timing-primary), box-shadow var(--duration-primary) var(--timing-primary), -webkit-box-shadow var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary), background-color var(--primary-duration) var(--timing-primary), -webkit-box-shadow var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary), background-color var(--primary-duration) var(--timing-primary), -webkit-box-shadow var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary), background-color var(--primary-duration) var(--timing-primary), box-shadow var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary), background-color var(--primary-duration) var(--timing-primary), box-shadow var(--primary-duration) var(--timing-primary), -webkit-box-shadow var(--primary-duration) var(--timing-primary);
 }
 .portfolio__button--accent {
   background-color: var(--accent-color);
@@ -1620,10 +1616,10 @@ button {
   height: 100%;
   text-decoration: none;
   color: inherit;
-  -webkit-transition: -webkit-box-shadow var(--duration-primary) var(--timing-primary);
-  transition: -webkit-box-shadow var(--duration-primary) var(--timing-primary);
-  transition: box-shadow var(--duration-primary) var(--timing-primary);
-  transition: box-shadow var(--duration-primary) var(--timing-primary), -webkit-box-shadow var(--duration-primary) var(--timing-primary);
+  -webkit-transition: -webkit-box-shadow var(--primary-duration) var(--timing-primary);
+  transition: -webkit-box-shadow var(--primary-duration) var(--timing-primary);
+  transition: box-shadow var(--primary-duration) var(--timing-primary);
+  transition: box-shadow var(--primary-duration) var(--timing-primary), -webkit-box-shadow var(--primary-duration) var(--timing-primary);
 }
 .portfolio__card-link:hover, .portfolio__card-link:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -1657,13 +1653,13 @@ button {
   width: 100%;
   height: 100%;
   color: var(--primary-white-color);
-  background-color: var(--bg-overlay-card-portfolio);
+  background-color: var(--bcg-overlay-card-portfolio);
   -webkit-transform: translatey(100%);
           transform: translatey(100%);
-  -webkit-transition: -webkit-transform var(--duration-primary) var(--timing-primary);
-  transition: -webkit-transform var(--duration-primary) var(--timing-primary);
-  transition: transform var(--duration-primary) var(--timing-primary);
-  transition: transform var(--duration-primary) var(--timing-primary), -webkit-transform var(--duration-primary) var(--timing-primary);
+  -webkit-transition: -webkit-transform var(--primary-duration) var(--timing-primary);
+  transition: -webkit-transform var(--primary-duration) var(--timing-primary);
+  transition: transform var(--primary-duration) var(--timing-primary);
+  transition: transform var(--primary-duration) var(--timing-primary), -webkit-transform var(--primary-duration) var(--timing-primary);
 }
 .portfolio__card-link:hover .portfolio__thumb-overlay, .portfolio__card-link:focus .portfolio__thumb-overlay {
   -webkit-transform: translatey(0);
@@ -1705,7 +1701,7 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--bg-footer);
+  background-color: var(--bcg-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1803,8 +1799,8 @@ button {
   line-height: 1.71;
   color: var(--primary-white-color);
   margin-bottom: 9px;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .address__item:hover, .address__item:focus {
   color: var(--accent-color);
@@ -1813,11 +1809,11 @@ button {
 .address__email {
   display: block;
   text-decoration: none;
-  color: var(--color-contact-footer);
+  color: var(--color-footer);
   line-height: 1.71;
   margin-bottom: 9px;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .address__email:hover, .address__email:focus {
   color: var(--accent-color);
@@ -1825,10 +1821,10 @@ button {
 
 .address__tel {
   text-decoration: none;
-  color: var(--color-contact-footer);
+  color: var(--color-footer);
   line-height: 1.71;
-  -webkit-transition: color var(--duration-primary) var(--timing-primary);
-  transition: color var(--duration-primary) var(--timing-primary);
+  -webkit-transition: color var(--primary-duration) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary);
 }
 .address__tel:hover, .address__tel:focus {
   color: var(--accent-color);
@@ -1885,7 +1881,7 @@ button {
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--color-input-footer);
+  color: var(--color-footer);
   background-color: transparent;
   border: 1px solid var(--color-board-input-footer);
   border-radius: var(--radius-board-primary);

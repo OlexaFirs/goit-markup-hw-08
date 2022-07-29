@@ -32,7 +32,7 @@
   text-decoration: none;
   color: inherit;
 
-  transition: box-shadow var(--duration-primary) var(--timing-primary);
+  transition: box-shadow var(--primary-duration) var(--timing-primary);
 
   &:hover,
   &:focus {
@@ -63,10 +63,10 @@
   height: 100%;
 
   color: var(--primary-white-color);
-  background-color: var(--bg-overlay-card-portfolio);
+  background-color: var(--bcg-overlay-card-portfolio);
 
   transform: translatey(100%);
-  transition: transform var(--duration-primary) var(--timing-primary);
+  transition: transform var(--primary-duration) var(--timing-primary);
 
   .portfolio__card-link:hover &,
   .portfolio__card-link:focus & {

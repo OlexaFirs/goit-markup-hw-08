@@ -1,74 +1,63 @@
 :root {
 
 --accent-color: #2196f3;
+--accent-hover: #188ce8;
 --primary-white-color: #ffffff;
 --title-text-color: #212121;
 --primary-text-color: #757575;
 --client-color: #afb1b8;
 --secondary-black-color: #000000;
 --bcg-color: #f5f4fa;
-
-
-  --color-board-btn-close: rgba(0, 0, 0, 0.1);
-  --color-board-card: #eeeeee;
-  --color-board-header: #ececec;
-  --color-board-input-footer: rgba(255, 255, 255, 0.3);
-  --color-board-input-modal: rgba(33, 33, 33, 0.2);
-  --color-contact-footer: rgba(255, 255, 255, 0.6);
-  --color-input-footer: rgba(255, 255, 255, 0.6);
-  --color-placeholder-modal: rgba(117, 117, 117, 0.5);
-  --bg-backdrop: rgba(0, 0, 0, 0.2);
-  --bg-btn-hover: #188ce8;
-  --bg-work: rgba(47, 48, 58, 0.8);
-  --bg-footer: #2f303a;
-  --bg-hero: #c4c4c4;
-  --bg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
-  --bg-social-icon-footer: rgba(255, 255, 255, 0.1);
-  
-  --bg-link-social-team: transparent;
-  --bg-client: transparent;
-  --duration-primary: 250ms;
-
-  --font-family-primary: 'Roboto', sans-serif;
-  --font-family-secondary: 'Raleway', sans-serif;
-  --font-size-primary: 14px;
-  --letter-spacing-primary: 0.03em;
-  --line-height-primary: 1.14;
-
-  --gap: 30px;
-  
-  --margin-menu-item: 50px;
-  --margin-contact-item: 30px;
-
-  --padding-container: 15px;
-  --padding-hero-under-1200: 118px;
-  --padding-hero-1200: 200px;
-  --padding-menu-mobile: 48px 40px;
-  --padding-modal: 40px;
-  --padding-section-under-1200: 60px;
-  --padding-section-1200: 94px;
-
-  --radius-board-primary: 4px;
-
-  --shadow-card-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+--bcg-footer: #2f303a;
+--bcg-hero: #c4c4c4;
+--bcg-backdrop: rgba(0, 0, 0, 0.2);
+--bcg-work: rgba(47, 48, 58, 0.8);
+--bcg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
+--bcg-social-icon-footer: rgba(255, 255, 255, 0.1);
+--color-board-card: #eeeeee;
+--color-board-header: #ececec;
+--color-footer: rgba(255, 255, 255, 0.6);
+--color-board-btn-close: rgba(0, 0, 0, 0.1);
+--color-board-input-footer: rgba(255, 255, 255, 0.3);
+--color-board-input-modal: rgba(33, 33, 33, 0.2);
+--color-placeholder-modal: rgba(117, 117, 117, 0.5);
+--shadow-card-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+--shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --shadow-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  --shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --shadow-menu-mobile: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+--shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+--shadow-menu-mobile: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+  0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  --timing-primary: cubic-bezier(0.4, 0, 0.2, 1);
+--primary-duration: 250ms;
+--timing-primary: cubic-bezier(0.4, 0, 0.2, 1);
 
-  --width-card-768: 354px;
-  --width-container-480: 480px;
-  --width-container-768: 768px;
-  --width-container-1200: 1200px;
-  --width-page: 1600px;
-  --width-form-modal-under-1200: 370px;
-  --width-form-modal-1200: 448px;
+--font-family-primary: 'Roboto', sans-serif;
+--font-family-secondary: 'Raleway', sans-serif;
+--font-size-primary: 14px;
+--letter-spacing-primary: 0.03em;
+--line-height-primary: 1.14;
+
+--gap: 30px;
+--margin-menu-item: 50px;
+--padding-container: 15px;
+--padding-hero-under: 118px;
+--padding-hero: 200px;
+--padding-menu-mobile: 48px 40px;
+--padding-modal: 40px;
+--padding-section-under: 60px;
+--padding-section: 94px;
+--radius-board-primary: 4px;
+
+--width-card-768: 354px;
+--width-container-480: 480px;
+--width-container-768: 768px;
+--width-container-1200: 1200px;
+--width-page: 1600px;
+--width-form-modal-under: 370px;
+--width-form-modal: 448px;
 }
 
 $minusIndent: -30px;

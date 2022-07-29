@@ -46,9 +46,9 @@
   padding: 6px 22px;
   box-shadow: none;
 
-  transition: color var(--duration-primary) var(--timing-primary),
-    background-color var(--duration-primary) var(--timing-primary),
-    box-shadow var(--duration-primary) var(--timing-primary);
+  transition: color var(--primary-duration) var(--timing-primary),
+    background-color var(--primary-duration) var(--timing-primary),
+    box-shadow var(--primary-duration) var(--timing-primary);
 
   &--accent {
     background-color: var(--accent-color);
