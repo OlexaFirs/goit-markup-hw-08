@@ -1,0 +1,26 @@
+.button {
+  @include positioning-flex();
+
+  min-width: 200px;
+  height: 50px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: var(--color-btn-submit-modal);
+  box-shadow: var(--shadow-btn);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-board-primary);
+  cursor: pointer;
+
+  transition: background-color var(--duration-primary) var(--timing-primary);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--bg-btn-hover);
+}

@@ -1,0 +1,59 @@
+.modal {
+  position: relative;
+  padding: var(--padding-modal);
+  background-color: var(--bg-modal);
+  border-radius: var(--radius-board-primary);
+  box-shadow: var(--shadow-modal);
+  z-index: 20;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @include positioning-flex();
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-btn-close);
+  border: 1px solid var(--color-board-btn-close);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 20;
+
+  transition: color var(--duration-primary) var(--timing-primary);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.modal__close-icon {
+  @extend %fill-icon;
+}
+
+.backdrop--is-hidden .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(0.2);
+  opacity: 0;
+}
+
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+
+  transition: opacity var(--duration-primary) var(--timing-primary),
+    transform var(--duration-primary) var(--timing-primary);
+}

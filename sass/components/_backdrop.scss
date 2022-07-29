@@ -1,0 +1,20 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 10;
+
+  background-color: var(--bg-backdrop);
+
+  visibility: visible;
+
+  transition: visibility var(--duration-primary) var(--timing-primary);
+}
+
+.backdrop--is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility var(--duration-primary) var(--timing-primary);
+}

@@ -1,0 +1,51 @@
+.footer__container {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    @include positioning-flex($jc: start, $ai: baseline);
+    text-align: left;
+  }
+}
+
+.container_align {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include positioning-flex($ai: baseline);
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    @include positioning-flex($ai: baseline);
+  }
+}
+
+.container__info {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin-bottom: 0;
+    max-width: var(--width-card-768);
+    margin-right: var(--gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.container__social {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1190px) {
+    width: 354px;
+    margin-bottom: 0;
+    max-width: var(--width-card-768);
+    margin-right: var(--gap);
+  }
+}
+
+.container__sign-up {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}

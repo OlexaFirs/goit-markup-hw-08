@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: var(--width-container-480);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: var(--width-container-768);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: var(--width-container-1200);
+  }
+}

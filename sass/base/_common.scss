@@ -1,0 +1,13 @@
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--bg-page);
+  color: var(--color-p);
+  font-size: var(--font-size-primary);
+  letter-spacing: var(--letter-spacing-primary);
+  line-height: var(--line-height-primary);
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}

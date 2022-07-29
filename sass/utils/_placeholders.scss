@@ -1,0 +1,23 @@
+%fill-icon {
+  display: block;
+  fill: currentColor;
+}
+
+%footer-join {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+%title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: var(--color-h-second);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}

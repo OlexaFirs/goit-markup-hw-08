@@ -1,0 +1,64 @@
+.portfolio__filter-set {
+  display: flex;
+  justify-content: center;
+
+  &--append {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  &--append {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.portfolio__filter {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio__button {
+  background-color: var(--bg-btn-secondary);
+  color: var(--color-btn-secondary);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 6px 22px;
+  box-shadow: none;
+
+  transition: color var(--duration-primary) var(--timing-primary),
+    background-color var(--duration-primary) var(--timing-primary),
+    box-shadow var(--duration-primary) var(--timing-primary);
+
+  &--accent {
+    background-color: var(--bg-btn-primary);
+    color: var(--color-btn-primary);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-btn-primary);
+    color: var(--color-btn-primary);
+    box-shadow: var(--shadow-btn-filter);
+  }
+}

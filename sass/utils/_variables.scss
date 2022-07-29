@@ -1,0 +1,103 @@
+:root {
+  --color-accent: #2196f3;
+  --color-addredd-footer: #ffffff;
+  --color-board-btn-close: rgba(0, 0, 0, 0.1);
+  --color-board-card: #eeeeee;
+  --color-board-client: #afb1b8;
+  --color-board-header: #ececec;
+  --color-board-input-footer: rgba(255, 255, 255, 0.3);
+  --color-board-input-modal: rgba(33, 33, 33, 0.2);
+  --color-board-input-modal-accent: #2196f3;
+  --color-btn-close: #000000;
+  --color-btn-primary: #ffffff;
+  --color-btn-secondary: #212121;
+  --color-btn-submit-modal: #ffffff;
+  --color-contact-footer: rgba(255, 255, 255, 0.6);
+  --color-join-footer: #ffffff;
+  --color-work: #ffffff;
+  --color-h-second: #212121;
+  --color-h-third: #212121;
+  --color-icon-client: #afb1b8;
+  --color-icon-company: #afb1b8;
+  --color-icon-menu-mobile: #212121;
+  --color-icon-modal: #212121;
+  --color-icon-social-team: #afb1b8;
+  --color-icon-social-team-hover: #ffffff;
+  --color-input-footer: rgba(255, 255, 255, 0.6);
+  --color-label-modal: #757575;
+  --color-link-header: #757575;
+  --color-logo-footer: #ffffff;
+  --color-logo-header: #000000;
+  --color-menu-header: #212121;
+  --color-overlay-card-portfolio: #ffffff;
+  --color-p: #757575;
+  --color-placeholder-modal: rgba(117, 117, 117, 0.5);
+  --color-text-modal: #757575;
+  --color-title-hero: #ffffff;
+  --color-title-modal: #212121;
+
+  --bg-achievement: #f5f4fa;
+  --bg-backdrop: rgba(0, 0, 0, 0.2);
+  --bg-btn-hover: #188ce8;
+  --bg-btn-primary: #2196f3;
+  --bg-btn-secondary: #f5f4fa;
+  --bg-card-team: #ffffff;
+  --bg-client: transparent;
+  --bg-work: rgba(47, 48, 58, 0.8);
+  --bg-footer: #2f303a;
+  --bg-header: #ffffff;
+  --bg-hero: #c4c4c4;
+  --bg-link-social-team: transparent;
+  --bg-menu-mobile: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-overlay-card-portfolio: rgba(33, 150, 243, 0.9);
+  --bg-page: #ffffff;
+  --bg-section-team: #f5f4fa;
+  --bg-social-icon-footer: rgba(255, 255, 255, 0.1);
+
+  --duration-primary: 250ms;
+
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Raleway', sans-serif;
+  --font-size-primary: 14px;
+  --letter-spacing-primary: 0.03em;
+  --line-height-primary: 1.14;
+
+  --gap: 30px;
+  
+  --margin-menu-item: 50px;
+  --margin-contact-item: 30px;
+
+  --padding-container: 15px;
+  --padding-hero-under-1200: 118px;
+  --padding-hero-1200: 200px;
+  --padding-menu-mobile: 48px 40px;
+  --padding-modal: 40px;
+  --padding-section-under-1200: 60px;
+  --padding-section-1200: 94px;
+
+  --radius-board-primary: 4px;
+
+  --shadow-card-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadow-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-menu-mobile: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  --timing-primary: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --width-card-768: 354px;
+  --width-container-480: 480px;
+  --width-container-768: 768px;
+  --width-container-1200: 1200px;
+  --width-page: 1600px;
+  --width-form-modal-under-1200: 370px;
+  --width-form-modal-1200: 448px;
+}
+
+$minusIndent: -30px;
+$plusIndent: 30px;

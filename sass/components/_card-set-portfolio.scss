@@ -1,0 +1,103 @@
+.portfolio__card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: #{$minusIndent};
+  margin-top: #{$minusIndent};
+  text-align: left;
+}
+
+.portfolio__card {
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+
+  flex-basis: calc(100vw - #{$plusIndent});
+
+  @media screen and (min-width: 480px) {
+    flex-basis: var(--width-container-480)-#{$plusIndent};
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$plusIndent});
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - #{$plusIndent});
+  }
+}
+
+.portfolio__card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+
+  transition: box-shadow var(--duration-primary) var(--timing-primary);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.potfolio__image-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  height: 294px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio__thumb-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--color-overlay-card-portfolio);
+  background-color: var(--bg-overlay-card-portfolio);
+
+  transform: translatey(100%);
+  transition: transform var(--duration-primary) var(--timing-primary);
+
+  .portfolio__card-link:hover &,
+  .portfolio__card-link:focus & {
+    transform: translatey(0);
+  }
+}
+
+.portfolio__text-overlay {
+  font-size: 18px;
+  line-height: 1.555;
+  padding: 0 24px;
+}
+
+.portfolio__card-area {
+  border: 1px solid var(--color-board-card);
+  border-top: none;
+  padding: 20px 24px;
+  flex-grow: 1;
+}
+
+.portfolio__card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-h-second);
+  margin-bottom: 4px;
+}
+
+.portfolio__card-text {
+  display: block;
+  font-size: 16px;
+  line-height: 1.88;
+}
