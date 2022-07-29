@@ -1199,13 +1199,13 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .achievement__section {
+  .preference__section {
     padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .achievement__list {
+  .preference__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1217,22 +1217,22 @@ button {
 }
 
 @media screen and (max-width: 479px) {
-  .achievement__item {
+  .preference__item {
     width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  .achievement__item + .achievement__item {
+  .preference__item + .preference__item {
     margin-top: var(--gap);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .achievement__item {
+  .preference__item {
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .achievement__item {
+  .preference__item {
     -ms-flex-preferred-size: calc(50% - var(--gap));
         flex-basis: calc(50% - var(--gap));
     margin-left: var(--gap);
@@ -1240,7 +1240,7 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
-  .achievement__item {
+  .preference__item {
     -ms-flex-preferred-size: calc(25% - var(--gap));
         flex-basis: calc(25% - var(--gap));
     margin-left: var(--gap);
@@ -1248,7 +1248,7 @@ button {
   }
 }
 
-.achievement__thumb {
+.preference__thumb {
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,7 +1263,7 @@ button {
   margin-bottom: 30px;
 }
 
-.achievement__title {
+.preference__title {
   display: block;
   text-align: center;
   font-weight: 700;
@@ -1273,12 +1273,12 @@ button {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  .achievement__title {
+  .preference__title {
     text-align: left;
   }
 }
 
-.achievement__text {
+.preference__text {
   line-height: 1.71;
   text-align: left;
 }

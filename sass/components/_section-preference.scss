@@ -1,9 +1,9 @@
-.achievement__section {
+.preference__section {
   @media screen and (min-width: 1200px) {
     padding-bottom: 0;
   }
 }
-.achievement__list {
+.preference__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
   }
 }
 
-.achievement__item {
+.preference__item {
   @media screen and (max-width: 479px) {
     width: 100%;
   }
@@ -39,14 +39,14 @@
   }
 }
 
-.achievement__thumb {
+.preference__thumb {
   height: 120px;
   @include positioning-flex();
   background-color: var(--bcg-color);
   margin-bottom: 30px;
 }
 
-.achievement__title {
+.preference__title {
   display: block;
   text-align: center;
   font-weight: 700;
@@ -60,7 +60,7 @@
   }
 }
 
-.achievement__text {
+.preference__text {
   line-height: 1.71;
   text-align: left;
 }
