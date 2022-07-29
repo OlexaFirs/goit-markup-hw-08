@@ -42,7 +42,7 @@
 .achievement__thumb {
   height: 120px;
   @include positioning-flex();
-  background-color: var(--bg-achievement);
+  background-color: var(--bcg-color);
   margin-bottom: 30px;
 }
 
