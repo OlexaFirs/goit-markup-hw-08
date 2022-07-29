@@ -24,12 +24,12 @@
   transition: color var(--duration-primary) var(--timing-primary);
 
   &--current {
-    color: var(--color-accent);
+    color: var(--accent-color);
   }
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--accent-color);
   }
 
   @media screen and (max-width: 767px) {
@@ -49,7 +49,7 @@
       left: 0;
       bottom: -1px;
       content: '';
-      background-color: var(--color-accent);
+      background-color: var(--accent-color);
       border-radius: 2px;
       height: 4px;
       width: 100%;

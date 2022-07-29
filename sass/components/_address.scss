@@ -6,14 +6,14 @@
 
 .address__item {
   line-height: 1.71;
-  color: var(--color-addredd-footer);
+  color: var(--primary-white-color);
   margin-bottom: 9px;
 
   transition: color var(--duration-primary) var(--timing-primary);
 
   &:hover,
   &:focus {
-  color: var(--color-accent);
+  color: var(--accent-color);
   }
 }
 
@@ -28,7 +28,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--accent-color);
   }
 }
 
@@ -41,6 +41,6 @@
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--accent-color);
   }
 }

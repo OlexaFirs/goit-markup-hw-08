@@ -1,5 +1,5 @@
 .social {
-  color: var(--color-join-footer);
+  color: var(--primary-white-color);
   &__list,
   &__item {
     @include positioning-flex();
@@ -33,7 +33,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--color-accent);
+    background-color: var(--accent-color);
   }
 
   &--refill {
@@ -43,6 +43,6 @@
 
   &--refill:hover,
   &--refill:focus {
-    color: var(--color-icon-social-team-hover);
+    color: var(--primary-white-color);
   }
 }

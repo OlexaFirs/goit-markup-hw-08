@@ -42,7 +42,7 @@
   margin-bottom: 10px;
 
   &:focus-within > .form__icon {
-    fill: var(--color-accent);
+    fill: var(--accent-color);
   }
 }
 
@@ -69,7 +69,7 @@
   transition: border var(--duration-primary) var(--timing-primary);
 
   &:focus-within {
-    border: 1px solid var(--color-board-input-modal-accent);
+    border: 1px solid var(--accent-color);
   }
 }
 
@@ -101,7 +101,7 @@
   transition: border var(--duration-primary) var(--timing-primary);
 
   &:focus-within {
-    border: 1px solid var(--color-board-input-modal-accent);
+    border: 1px solid var(--accent-color);
   }
 
   &::placeholder {
@@ -141,7 +141,7 @@
 }
 
 .form__checkbox-link {
-  color: var(--color-accent);
+  color: var(--accent-color);
   padding: 0;
   margin: 0;
 }
@@ -168,7 +168,7 @@
 .form__icon-checked {
   opacity: 0;
 
-  fill: var(--color-accent);
+  fill: var(--accent-color);
 
   transition: opacity var(--duration-primary) var(--timing-primary);
 

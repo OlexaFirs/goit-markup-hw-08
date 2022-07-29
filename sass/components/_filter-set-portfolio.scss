@@ -51,14 +51,14 @@
     box-shadow var(--duration-primary) var(--timing-primary);
 
   &--accent {
-    background-color: var(--bg-btn-primary);
-    color: var(--color-btn-primary);
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
   }
 
   &:hover,
   &:focus {
-    background-color: var(--bg-btn-primary);
-    color: var(--color-btn-primary);
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
     box-shadow: var(--shadow-btn-filter);
   }
 }

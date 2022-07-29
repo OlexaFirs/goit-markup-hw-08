@@ -1,5 +1,5 @@
 .sign-up {
-  color: var(--color-join-footer);
+  color: var(--primary-white-color);
 }
 
 .sign-up__join {
@@ -48,7 +48,7 @@
 
 .sign-up__icon {
   display: inline-block;
-  fill: var(--color-btn-submit-modal);
+  fill: var(--primary-white-color);
 
   &--append {
     margin-left: 10px;
