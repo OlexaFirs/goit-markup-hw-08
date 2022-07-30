@@ -417,7 +417,6 @@ button {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 100%;
-    max-width: 480px;
     height: 100%;
     padding: 48px 40px;
     -webkit-box-shadow: var(--shadow-menu-mobile);
